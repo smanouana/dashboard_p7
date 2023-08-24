@@ -1,3 +1,4 @@
+from time import sleep
 import streamlit as st
 import requests
 import matplotlib.pyplot as plt
@@ -85,8 +86,10 @@ def main():
     if st.button("Analyser"):
         with st.spinner('Fetching data and performing analysis...'):
             display_client_data(client_id)
+            sleep(5)
             display_credit_score(client_id)
             display_variable_analysis(client_id, variable)
+            sleep(10)
             display_shap_plot(client_id)
             st.balloons()
 
