@@ -1,3 +1,4 @@
+
 import pandas as pd
 from time import sleep
 import streamlit as st
@@ -20,7 +21,7 @@ def fetch_data(endpoint, payload):
 
 def display_client_data(client_id):
     data = fetch_data("https://creditapi-joqlneigka-uc.a.run.app/infos_client", {"client_id": client_id})
-    sleep(SLEEP_DURATION)
+    
     if data:
         df = pd.DataFrame([data])  # Convert dictionary to dataframe with one row
         st.write('Tableau des données du client ID')
