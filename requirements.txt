@@ -1,7 +1,7 @@
-streamlit==1.23.1
-requests==2.28.1
-pandas==1.4.4
-numpy==1.21.5
-plotly==5.9.0
-matplotlib==3.5.2
-shap==0.41.0
+streamlit==1.1.0  # As of my last update. You might want to use the latest version.
+requests==2.26.0  # As of my last update.
+pandas==1.3.3  # As of my last update.
+numpy==1.21.2  # As of my last update.
+plotly==5.3.1  # As of my last update.
+matplotlib==3.4.3  # As of my last update.
+shap==0.39.0  # As of my last update.
